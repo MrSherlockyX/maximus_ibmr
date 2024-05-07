@@ -1,0 +1,68 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transição gradual para cor de fundo e cor do texto */
+}
+
+.light-theme {
+    background-color: #ffffff; /* Cor de fundo do tema claro */
+    color: #000000; /* Cor do texto do tema claro */
+}
+
+.dark-theme {
+    background-color: #333333; /* Cor de fundo do tema escuro */
+    color: #ffffff; /* Cor do texto do tema escuro */
+}
+
+
+main {
+    margin: 5vh 15%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+label::before {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    transition: 0.5s;
+}
+
+label.active::before{
+    left: 24px;
+    background: #ffffff; /* Mudar cor do botão no modo escuro */
+}
+
+body.night{
+    background: #161616; /* Cor do fundo no modo escuro */
+    color: #ffffff; /* Cor do texto no modo escuro */
+}
+
