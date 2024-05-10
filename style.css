@@ -84,12 +84,25 @@ ul {
 
 li {
     font-size: 25px;
-    padding-right: 20%;
+    margin-right: 20%;
 }
 
 li a {
     text-decoration: none;
     color: white;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+
+li :hover {
+    background-color: white;
+    color: #000;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left: 20%;
+    padding-right: 15%;
 }
 
 .navbar {
