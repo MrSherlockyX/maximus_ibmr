@@ -78,7 +78,8 @@ body.night{
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 60%;
+    padding-top: 3%;
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -86,8 +87,9 @@ ul {
 }
 
 li {
-    font-size: 25px;
+    font-size: large;
     margin-right: 20%;
+    padding-right: 1%;
 }
 
 li a {
@@ -95,12 +97,11 @@ li a {
     color: white;
     padding-top: 100%;
     padding-bottom: 100%;
-    padding-left: 20%;
-    padding-right: 15%;
+    padding-left: 15%;
 }
 
 li :hover {
-    background-color: white;
+    background-color: rgb(255, 174, 0);
     color: #000;
     padding-top: 100%;
     padding-bottom: 100%;
@@ -112,6 +113,12 @@ li :hover {
     padding-right: 15%;
     padding-top: 1%;
     padding-bottom: 1%;
+    display: flex;
+}
+
+.usericon img{
+    height: 40px;
+    width: 40px;
 }
 
 .sitelogo img {
@@ -121,8 +128,11 @@ li :hover {
 
 .sitelogo{
     padding-left: 5%;
+    padding-right: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -179,6 +189,7 @@ header {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
+    font-weight: bold;
 	font-size:18px;
     margin-top: 3%;
 	padding:16px 31px;
@@ -187,12 +198,13 @@ header {
 }
 
 .watchbtn:hover {
-    background-color: rgb(255, 255, 255);
-	border:1px solid #ffffff;
+    background-color: rgb(255, 174, 0);
+	border:1px solid #000000;
 	display:inline-block;
 	color: black;
 	font-family:Arial;
 	font-size:18px;
+    font-weight: bold;
     margin-top: 3%;
 	padding:16px 31px;
 	text-decoration:none;
@@ -205,6 +217,7 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3%;
 }
 
 .newswire h1 {
@@ -213,10 +226,13 @@ header {
     padding-top: 4%;
     padding-left: 5%;
     font-family:Arial;
+    font-size: 180%;
+    font-weight: bolder;
 }
 
 .news {
     display: flex;
+
 }
 
 .newscard {
@@ -227,6 +243,33 @@ header {
     margin-bottom: 2%;
 }
 
+.newscard2 {
+    margin-top: 2%;
+    margin-left: 1%;
+    background-color: #000;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.newscard2 img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.newscard3 {
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 2%;
+    background-color: #000;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.newscard3 img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
 .newscard img{
     width: 100%;
     border-radius: 8px 8px 0px 0px;
@@ -234,6 +277,39 @@ header {
 
 .newscardinfo {
     color: white;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
+}
+
+.newscardinfo-date {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.newscardinfo-date p {
+    padding-left: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.newscardinfo-title {
+    padding-left: 6%;
+    margin-bottom: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+footer p {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
