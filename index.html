@@ -4,35 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compartible" content="chrome">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style(old).css">
         <title> JavaScript Training </title>
     </head>
 
 <body>
-    <header>
-        <label id="dark-change"> </label>
-    </header>
-    <main>
-        <h1> Dark Mode </h1>
-        <div id="respon">
 
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi id facilis est sapiente, autem praesentium ut, distinctio voluptate cumque alias voluptates incidunt officiis molestias natus at molestiae, maxime sit error.</p>
+    <h2> Toggle Dark Mode </h2>
 
-            <img src="/images/lamp.jpg">
+    <button onclick="myFunction()"> Toggle dark mode </button>
 
-        </div>
-    </main>
-
-    <script>
-        var content = document.getElementsByTagName('body')[0];
-        var darkMode = document.getElementById('dark-change');
-        darkMode.addEventListener('click', function(){
-            darkMode.classList.toggle('active');
-            content.classList.toggle('night');
-
-        })
+    <script> 
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    
     </script>
-
+    
 
 </body>
 </html>
