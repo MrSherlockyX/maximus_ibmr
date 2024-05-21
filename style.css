@@ -84,6 +84,7 @@
 }
 
 .dotslideshow {
+    margin-top: 20%;
     display: block;
 }
 
@@ -280,6 +281,7 @@ header {
     padding-top: 3%;
     align-items: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 380%;
 }
 
 .texto-inicio h1 {
