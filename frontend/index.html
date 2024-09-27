@@ -1,38 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compartible" content="chrome">
-        <link rel="stylesheet" href="style.css">
-        <title> JavaScript Training </title>
-    </head>
 
-<body>
-    <header>
-        <label id="dark-change"> </label>
-    </header>
-    <main>
-        <h1> Dark Mode </h1>
-        <div id="respon">
-
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi id facilis est sapiente, autem praesentium ut, distinctio voluptate cumque alias voluptates incidunt officiis molestias natus at molestiae, maxime sit error.</p>
-
-            <img src="/images/lamp.jpg">
-
-        </div>
-    </main>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compartible" content="chrome">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+    <title> Rockstar Games </title>
     <script>
-        var content = document.getElementsByTagName('body')[0];
-        var darkMode = document.getElementById('dark-change');
-        darkMode.addEventListener('click', function(){
-            darkMode.classList.toggle('active');
-            content.classList.toggle('night');
-
-        })
+        document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        });
     </script>
+</head>
+    <header>
+
+        <sitelogo class="sitelogo">
+            <img src="./images/pngwing.com (1).png">
+        </sitelogo>
+
+        <navbar class="navbar">
+        <ul class="navlist">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <usericon class="usericon">
+            <ul class="menu">
+                <li class="menu-item">
+                    <img src="./images/kindpng_746008 (1).png">
+                    <ul class="drop-menu">
+                        <li class="drop-menu-item">
+                            <a href="#">Login</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">Sign in</a>
+                        </li>
+                        <li class="drop-menu-item">
+                            <a href="#">Help</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+
+        </usericon>
+        <arrow class="arrow">
+        <img src="/images/arrow.png">
+        </arrow>
+        </navbar>
+    </header>
+<body>
 
 
+
+    <front-image class="front-image">
+            <imagem class="imagem">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="./images/gta6.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="./images/gta5_clk.png">
+                      <div class="text">Caption Two</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="./images/gta5_clk1.png">
+                      <div class="text">Caption Three</div>
+                    </div>
+                  </div>
+            </imagem>
+            <texto-inicio class="texto-inicio">
+                <p>Grand Theft Auto VI</p>
+                <h1>Boas vindas a Leonidas!</h1>
+                <p>Grand Theft Auto VI vai para o estado de Leonida, que abriga as ruas iluminadas pelas luzes neon de Vice City e arredores, na maior e mais imersiva evolução da franquia Grand Theft Auto. Disponível em 2025 para PlayStation 5 e Xbox Series X|S.</p>
+                <a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" class="watchbtn">WATCH NOW</a>
+
+                <!-- Select Images -->
+                <dotslideshow class="dotslideshow">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </dotslideshow>
+
+            </texto-inicio>
+
+    </front-image>
+    <newswire class="newswire">
+        <h1>Novidades</h1>
+        <news class="news">
+            <newscard class="newscard">
+                <img src="./images/newscard.png">
+                <newscardinfo class="newscardinfo">
+                    <newscardinfo-date class="newscardinfo-date">
+                    <p>GTA Online</p>
+                    <p style="color: rgb(156, 156, 156);">Mai 9, 2024</p>
+                    </newscardinfo-date>
+                    <newscardinfo-title class="newscardinfo-title">
+                    <h2>Desbrave o alto-mar</h2>
+                    </newscardinfo-title>
+                </newscardinfo>
+            </newscard>
+            <newscard class="newscard2">
+                <img src="./images/gta2.png">
+                <newscardinfo class="newscardinfo">
+                    <newscardinfo-date class="newscardinfo-date">
+                    <p>GTA Online</p>
+                    <p style="color: rgb(156, 156, 156);">Mai 9, 2024</p>
+                    </newscardinfo-date>
+                    <newscardinfo-title class="newscardinfo-title">
+                    <h2>Resgate o Übermacht Cypher</h2>
+                    </newscardinfo-title>
+                </newscardinfo>
+            </newscard>
+            <newscard class="newscard3">
+                <img src="./images/gta3.png">
+                <newscardinfo class="newscardinfo">
+                    <newscardinfo-date class="newscardinfo-date">
+                    <p>GTA Online</p>
+                    <p style="color: rgb(156, 156, 156);">Mai 9, 2024</p>
+                    </newscardinfo-date>
+                    <newscardinfo-title class="newscardinfo-title">
+                    <h2>Acelere os ganhos com 3x</h2>
+                    </newscardinfo-title>
+                </newscardinfo>
+            </newscard>
+        </news>
+    </newswire>
+    
 </body>
-</html>
+
+<footer>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias sunt ex aspernatur dolore. Molestias culpa ipsam temporibus ab eveniet commodi dolor accusamus nobis, ratione laboriosam quos, consequuntur quidem minus?</p>
+</footer>

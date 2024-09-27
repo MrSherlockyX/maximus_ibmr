@@ -84,8 +84,8 @@
 }
 
 .dotslideshow {
+    margin-top: 20%;
     display: block;
-    margin-top: 10%;
 }
 
 .active, .dot:hover {
@@ -281,6 +281,7 @@ header {
     padding-top: 3%;
     align-items: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 380%;
 }
 
 .texto-inicio h1 {
@@ -302,9 +303,10 @@ header {
 	color:#ffffff;
 	font-family:Arial;
     font-weight: bold;
-	font-size:18px;
-    margin-top: 3%;
-	padding:16px 31px;
+	font-size:15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+	padding:10px 27px;
 	text-decoration:none;
     border-radius: 5px;
 }
@@ -315,10 +317,11 @@ header {
 	display:inline-block;
 	color: black;
 	font-family:Arial;
-	font-size:18px;
+	font-size:15px;
     font-weight: bold;
-    margin-top: 3%;
-	padding:16px 31px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+	padding:10px 27px;
 	text-decoration:none;
     border-radius: 5px;
 }
